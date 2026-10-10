@@ -1,0 +1,55 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 8px);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--ivory);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p, ul, dl, dd, figure { margin: 0; }
+h1, h2 { font-family: var(--font-display); font-weight: 500; }
+ul { padding: 0; list-style: none; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; }
+::selection { background: var(--champagne); color: var(--forest-deep); }
+
+:focus-visible {
+  outline: 3px solid var(--forest);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  background: var(--forest);
+  color: var(--ivory);
+  border-radius: var(--radius-sm);
+}
+.skip-link:focus { top: 0.75rem; }
+
+/* Brand logos always keep their official colors */
+.brand-logo { opacity: 1; filter: none; flex: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

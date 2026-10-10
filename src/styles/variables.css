@@ -1,0 +1,29 @@
+:root {
+  /* Palette: warm ivory, deep forest, muted sage, champagne */
+  --ivory: #f7f3ea;
+  --surface: #fcfaf4;
+  --tint: #efe9d9;
+  --champagne: #e6d8b8;
+  --beige: #d6c5a0;
+  --sage: #9db09a;
+  --sage-soft: #dde5d5;
+  --forest: #1e3a2f;
+  --forest-deep: #142a21;
+  --moss: #3f5e4c;
+  --ink: #1c2721;
+  --slate: #56625a;
+  --line: #ddd4c0;
+
+  --font-body: 'Manrope Variable', 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Fraunces Variable', 'Fraunces', Georgia, 'Times New Roman', serif;
+
+  --container: 1120px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  --header-h: 68px;
+  --section-y: clamp(4.5rem, 9vw, 7.5rem);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --shadow: 0 10px 28px -16px rgba(20, 42, 33, 0.35);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
